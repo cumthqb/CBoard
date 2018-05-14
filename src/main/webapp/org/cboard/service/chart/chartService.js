@@ -121,7 +121,7 @@ cBoard.service('chartService', function($q, dataService, chartPieService, chartL
         widgetWraper.loading = false;
       }
     };
-    dataService.getDataSeries(widget.datasource, widget.query, widget.datasetId, widget.config, callback, true);
+    dataService.getDataSeries(widget.datasource, widget.query, widget.datasetId, widget.config, callback, false);
   };
 
   var getChartServices = function(chartConfig) {
